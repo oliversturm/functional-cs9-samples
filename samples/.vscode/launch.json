@@ -10,9 +10,11 @@
       "request": "launch",
       "preLaunchTask": "build",
       // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/NewRecordWith/bin/Debug/net6.0/NewRecordWith.dll",
+      //"program": "${workspaceFolder}/NewRecordWith/bin/Debug/net6.0/NewRecordWith.dll",
+      "program": "${fileDirname}/bin/Debug/net6.0/${relativeFileDirname}.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/NewRecordWith",
+      "cwd": "${fileDirname}",
+      //"cwd": "${workspaceFolder}/NewRecordWith",
       // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
       "console": "internalConsole",
       "stopAtEntry": false

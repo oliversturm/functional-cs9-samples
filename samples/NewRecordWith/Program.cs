@@ -1,4 +1,4 @@
-﻿
+﻿Console.WriteLine("New record-specific 'with' mechanism");
 
 var oli = new Person("Oli", "Sturm");
 

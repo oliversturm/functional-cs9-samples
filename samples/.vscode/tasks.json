@@ -7,36 +7,12 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/NewRecordWith/NewRecordWith.csproj",
+        "${fileDirname}/${relativeFileDirname}.csproj",
+        //"${workspaceFolder}/NewRecordWith/NewRecordWith.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
       "problemMatcher": "$msCompile"
     },
-    {
-      "label": "publish",
-      "command": "dotnet",
-      "type": "process",
-      "args": [
-        "publish",
-        "${workspaceFolder}/NewRecordWith/NewRecordWith.csproj",
-        "/property:GenerateFullPaths=true",
-        "/consoleloggerparameters:NoSummary"
-      ],
-      "problemMatcher": "$msCompile"
-    },
-    {
-      "label": "watch",
-      "command": "dotnet",
-      "type": "process",
-      "args": [
-        "watch",
-        "run",
-        "${workspaceFolder}/NewRecordWith/NewRecordWith.csproj",
-        "/property:GenerateFullPaths=true",
-        "/consoleloggerparameters:NoSummary"
-      ],
-      "problemMatcher": "$msCompile"
-    }
   ]
 }
