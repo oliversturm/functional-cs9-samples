@@ -1,17 +1,17 @@
 ﻿using OldCloneWith;
 
 Action<Person> outputPerson = p => {
-  Console.WriteLine($"Person {p.FirstName} {p.Name}");
+  Console.WriteLine($"Person {p.FirstName} {p.Name}, Age {p.Age}");
 };
 
 Console.WriteLine("Old CloneWith helper");
 
-var oli = new Person("Oli", "Sturm");
+var oli = new Person("Oli", "Sturm", 27);
 
 outputPerson(oli);
 
-var olisFather = oli.CloneWith(new Dictionary<string, object> {
-  { "FirstName", "Klaus" }
+var nextYearOli = oli.CloneWith(new Dictionary<string, object> {
+  { "Age", oli.Age + 1 }
 });
 
-outputPerson(olisFather);
+outputPerson(nextYearOli);

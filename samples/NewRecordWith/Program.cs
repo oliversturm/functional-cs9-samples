@@ -1,15 +1,15 @@
 ﻿Console.WriteLine("New record-specific 'with' mechanism");
 
-var oli = new Person("Oli", "Sturm");
+var oli = new Person("Oli", "Sturm", 27);
 
 Console.WriteLine(oli);
 
-var olisFather = oli with { FirstName = "Klaus" };
+var nextYearOli = oli with { Age = oli.Age + 1 };
 
-Console.WriteLine(olisFather);
+Console.WriteLine(nextYearOli);
 
 
 // Side note: what on earth is the reason that C# requires me to include this
 // type declaration **after** its use in the top-level statements above?!??!
 
-public record Person(string FirstName, string Name);
+public record Person(string FirstName, string Name, int Age);
