@@ -11,5 +11,6 @@ Console.WriteLine(nextYearOli);
 
 // Side note: what on earth is the reason that C# requires me to include this
 // type declaration **after** its use in the top-level statements above?!??!
+// The blue squigglies indicate that I should "declare types in namespaces".
 
 public record Person(string FirstName, string Name, int Age);
